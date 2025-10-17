@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "brand-font", Poppins, sans-serif;
 }
 
 html,
@@ -50,21 +49,70 @@ main {
       font-size: 1.3rem;
     }
   }
+  /*First section starts here*/
+  .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #f3fcff, #fae8f0);
+    padding: 2rem;
+    gap: 5rem;
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: text-font;
+    }
+    h2 {
+      text-align: center;
+      font-family: brand-font;
+      font-weight: 300;
+      font-size: 2rem;
+    }
+  }
 }
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
   main {
-
-    header p{
-        text-align: center;
-        font-size: 1rem;
-        padding: 1rem;
+    header p {
+      text-align: center;
+      font-size: 1rem;
+      padding: 1rem;
     }
-    nav{
-        img{
-            width: 15%;
+    nav {
+      img {
+        width: 15%;
+      }
+    }
+    /*First section responsive starts here*/
+    .first {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 50%;
         }
+      }
+      .text {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 50%;
+        font-family: brand-font;
+      }
+      h2 {
+        padding: 1rem;
+      }
     }
   }
 }

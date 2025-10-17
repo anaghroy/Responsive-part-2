@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "brand-font", Poppins, sans-serif;
 }
 
 html,
@@ -24,6 +23,7 @@ main {
   width: 100%;
   background-color: #ffffff;
   /*Navbar*/
+  /*First section starts here*/
 }
 main header p {
   /*Header paragraph*/
@@ -51,9 +51,34 @@ main nav img {
 main nav i {
   font-size: 1.3rem;
 }
+main .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #f3fcff, #fae8f0);
+  padding: 2rem;
+  gap: 5rem;
+}
+main .first figure img {
+  width: 100%;
+}
+main .first .text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: text-font;
+}
+main .first h2 {
+  text-align: center;
+  font-family: brand-font;
+  font-weight: 300;
+  font-size: 2rem;
+}
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
+  main {
+    /*First section responsive starts here*/
+  }
   main header p {
     text-align: center;
     font-size: 1rem;
@@ -61,5 +86,29 @@ main nav i {
   }
   main nav img {
     width: 15%;
+  }
+  main .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  main .first figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .first figure img {
+    width: 50%;
+  }
+  main .first .text {
+    align-items: center;
+    font-size: 1.3rem;
+    width: 50%;
+    font-family: brand-font;
+  }
+  main .first h2 {
+    padding: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
