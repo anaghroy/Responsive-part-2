@@ -24,6 +24,8 @@ main {
   background-color: #ffffff;
   /*Navbar*/
   /*First section starts here*/
+  /*Second section starts here*/
+  /*Third section starts here*/
 }
 main header p {
   /*Header paragraph*/
@@ -73,11 +75,44 @@ main .first h2 {
   font-weight: 300;
   font-size: 2rem;
 }
+main .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .second .main-div .line {
+  border-top: 0.3rem solid #e8eaed;
+}
+main .second .main-div h2 {
+  padding: 0.5rem 2rem;
+  font-family: brand-font;
+}
+main .second .main-div p {
+  color: #000;
+  opacity: 0.8;
+  padding: 0.5rem 2rem;
+  font-family: brand-font;
+  font-size: 1rem;
+}
+main .second .main-div figure {
+  width: 100%;
+}
+main .second .main-div figure img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding: 2rem;
+}
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
   main {
     /*First section responsive starts here*/
+    /*Second section responsive starts here*/
   }
   main header p {
     text-align: center;
@@ -110,5 +145,19 @@ main .first h2 {
   }
   main .first h2 {
     padding: 1rem;
+  }
+  main .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 5rem;
+  }
+  main .second .main-div h2 {
+    font-size: 1.5rem;
+  }
+  main .second .main-div p {
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
