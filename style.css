@@ -28,6 +28,7 @@ main {
   /*Third section starts here*/
   /*Four section starts here*/
   /*Five section starts here*/
+  /*Four section starts here*/
 }
 main header p {
   /*Header paragraph*/
@@ -281,6 +282,63 @@ main .fiveth .main-five .text-content a:hover {
   color: #0468d7;
   transition: all ease-in 0.3s;
 }
+main .sixth {
+  background: linear-gradient(to right, #fcfce2, #f5fbfe);
+}
+main .sixth .main-six {
+  display: flex;
+  flex-direction: column;
+}
+main .sixth .main-six figure {
+  padding: 2rem 2rem;
+}
+main .sixth .main-six figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .sixth .main-six .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+main .sixth .main-six .text-content h3 {
+  font-family: brand-font;
+  color: #000;
+  opacity: 0.7;
+}
+main .sixth .main-six .text-content h1 {
+  font-family: brand-font;
+  font-size: 2.8rem;
+  color: #000;
+  line-height: 1;
+}
+main .sixth .main-six .text-content p {
+  font-family: text-font;
+  color: #000;
+  opacity: 0.7;
+  font-size: 1.2rem;
+}
+main .sixth .main-six .text-content a {
+  border: 0.1rem solid #0468d7;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-color: #0468d7;
+  color: #fff;
+  font-family: brand-font;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .sixth .main-six .text-content a:hover {
+  background-color: transparent;
+  color: #0468d7;
+  transition: all ease-in 0.3s;
+}
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
@@ -290,6 +348,7 @@ main .fiveth .main-five .text-content a:hover {
     /*Third section responsive starts here*/
     /*Fourth section responsive starts here*/
     /*Fiveth section responsive starts here*/
+    /*Sixth section responsive starts here*/
   }
   main header p {
     text-align: center;
@@ -432,7 +491,7 @@ main .fiveth .main-five .text-content a:hover {
   }
   main .fourth .main-four .text-content h1 {
     font-family: brand-font;
-    font-size: 2.8rem;
+    font-size: 4rem;
     color: #000;
     line-height: 1;
   }
@@ -492,7 +551,7 @@ main .fiveth .main-five .text-content a:hover {
   }
   main .fiveth .main-five .text-content h1 {
     font-family: brand-font;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #000;
     line-height: 1;
   }
@@ -518,6 +577,65 @@ main .fiveth .main-five .text-content a:hover {
   main .fiveth .main-five .text-content a:hover {
     background-color: #0468d7;
     color: #fff;
+    transition: all ease-in 0.3s;
+  }
+  main .sixth {
+    background: linear-gradient(to right, #fcfce2, #f5fbfe);
+  }
+  main .sixth .main-six {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  main .sixth .main-six figure {
+    width: 40%;
+  }
+  main .sixth .main-six figure img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .sixth .main-six .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-start;
+  }
+  main .sixth .main-six .text-content h3 {
+    font-family: brand-font;
+    color: #000;
+    opacity: 0.7;
+  }
+  main .sixth .main-six .text-content h1 {
+    font-family: brand-font;
+    font-size: 3.5rem;
+    color: #000;
+    line-height: 1;
+  }
+  main .sixth .main-six .text-content p {
+    font-family: text-font;
+    color: #000;
+    opacity: 0.7;
+    font-size: 1.2rem;
+  }
+  main .sixth .main-six .text-content a {
+    border: 0.1rem solid #0468d7;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    background-color: #0468d7;
+    color: #fff;
+    font-family: brand-font;
+    font-weight: 600;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .sixth .main-six .text-content a:hover {
+    background-color: transparent;
+    color: #0468d7;
     transition: all ease-in 0.3s;
   }
 }/*# sourceMappingURL=style.css.map */
