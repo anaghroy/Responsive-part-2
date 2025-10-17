@@ -1,0 +1,23 @@
+/*Font-Family*/
+@font-face {
+  font-family: brand-font;
+  src: url(./Fonts/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+@font-face {
+  font-family: text-font;
+  src: url(./Fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "brand-font", Poppins, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/********** Responsive Section **********//*# sourceMappingURL=style.css.map */
