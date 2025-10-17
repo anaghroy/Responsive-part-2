@@ -27,6 +27,7 @@ main {
   /*Second section starts here*/
   /*Third section starts here*/
   /*Four section starts here*/
+  /*Five section starts here*/
 }
 main header p {
   /*Header paragraph*/
@@ -223,6 +224,63 @@ main .fourth .main-four .text-content a:hover {
   color: #0468d7;
   transition: all ease-in 0.3s;
 }
+main .fiveth {
+  background-color: #f3fcff;
+}
+main .fiveth .main-five {
+  display: flex;
+  flex-direction: column;
+}
+main .fiveth .main-five figure {
+  padding: 2rem 2rem;
+}
+main .fiveth .main-five figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .fiveth .main-five .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+main .fiveth .main-five .text-content h3 {
+  font-family: brand-font;
+  color: #000;
+  opacity: 0.7;
+}
+main .fiveth .main-five .text-content h1 {
+  font-family: brand-font;
+  font-size: 2.8rem;
+  color: #000;
+  line-height: 1;
+}
+main .fiveth .main-five .text-content p {
+  font-family: text-font;
+  color: #000;
+  opacity: 0.7;
+  font-size: 1.2rem;
+}
+main .fiveth .main-five .text-content a {
+  border: 0.1rem solid #0468d7;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #0468d7;
+  font-family: brand-font;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .fiveth .main-five .text-content a:hover {
+  background-color: transparent;
+  color: #0468d7;
+  transition: all ease-in 0.3s;
+}
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
@@ -231,6 +289,7 @@ main .fourth .main-four .text-content a:hover {
     /*Second section responsive starts here*/
     /*Third section responsive starts here*/
     /*Fourth section responsive starts here*/
+    /*Fiveth section responsive starts here*/
   }
   main header p {
     text-align: center;
@@ -399,6 +458,66 @@ main .fourth .main-four .text-content a:hover {
   main .fourth .main-four .text-content a:hover {
     background-color: transparent;
     color: #0468d7;
+    transition: all ease-in 0.3s;
+  }
+  main .fiveth {
+    background-color: #fff;
+  }
+  main .fiveth .main-five {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  main .fiveth .main-five figure {
+    width: 40%;
+  }
+  main .fiveth .main-five figure img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .fiveth .main-five .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-start;
+    padding: 6rem;
+  }
+  main .fiveth .main-five .text-content h3 {
+    font-family: brand-font;
+    color: #000;
+    opacity: 0.7;
+  }
+  main .fiveth .main-five .text-content h1 {
+    font-family: brand-font;
+    font-size: 3rem;
+    color: #000;
+    line-height: 1;
+  }
+  main .fiveth .main-five .text-content p {
+    font-family: text-font;
+    color: #000;
+    opacity: 0.7;
+    font-size: 1.2rem;
+  }
+  main .fiveth .main-five .text-content a {
+    border: 0.1rem solid #0468d7;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #0468d7;
+    font-family: brand-font;
+    font-weight: 600;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .fiveth .main-five .text-content a:hover {
+    background-color: #0468d7;
+    color: #fff;
     transition: all ease-in 0.3s;
   }
 }/*# sourceMappingURL=style.css.map */
