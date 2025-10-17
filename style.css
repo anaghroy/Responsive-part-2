@@ -81,6 +81,7 @@ main .second {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+  padding: 4rem 0.1rem;
 }
 main .second .main-div .line {
   border-top: 0.3rem solid #e8eaed;
@@ -107,44 +108,115 @@ main .second .main-div figure img {
      object-position: center;
   padding: 2rem;
 }
+main .third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+main .third .main-div figure img {
+  width: 100%;
+}
+main .third .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+main .third .text-content h4 {
+  font-size: 1.2rem;
+  font-family: brand-font;
+  color: #000;
+  opacity: 0.8;
+}
+main .third .text-content h3 {
+  font-size: 2.9rem;
+  font-family: brand-font;
+  color: #000;
+}
+main .third .text-content p {
+  font-size: 1.2rem;
+  font-family: text-font;
+  color: #000;
+  opacity: 0.7;
+  text-align: left;
+}
+main .third .text-content .third-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .third .text-content .third-btn .btn {
+  border: 0.1rem solid #0468d7;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #0468d7;
+  font-family: brand-font;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .third .text-content .third-btn .more {
+  font-family: brand-font;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
   main {
     /*First section responsive starts here*/
     /*Second section responsive starts here*/
+    /*Third section responsive starts here*/
   }
   main header p {
     text-align: center;
     font-size: 1rem;
     padding: 1rem;
   }
+  main nav {
+    padding: 1rem 2rem;
+  }
   main nav img {
-    width: 15%;
+    width: 9%;
   }
   main .first {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  main .first figure {
+  main .first .first-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-evenly;
   }
-  main .first figure img {
+  main .first .first-row figure {
     width: 50%;
+    -o-object-position: center;
+       object-position: center;
   }
-  main .first .text {
+  main .first .first-row figure img {
+    width: 100%;
+  }
+  main .first .first-row .text {
+    display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    text-align: left;
+    font-size: 2.3rem;
     width: 50%;
+    padding: 0rem 9rem;
     font-family: brand-font;
+    line-height: 1;
   }
   main .first h2 {
-    padding: 1rem;
+    padding: 5rem 2rem;
+    text-align: center;
   }
   main .second {
     display: flex;
@@ -159,5 +231,56 @@ main .second .main-div figure img {
   }
   main .second .main-div p {
     font-size: 1.3rem;
+  }
+  main .third {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  main .third .main-div figure img {
+    width: 100%;
+  }
+  main .third .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.5rem;
+  }
+  main .third .text-content h4 {
+    font-size: 1.2rem;
+    font-family: brand-font;
+    color: #000;
+    opacity: 0.8;
+    padding: 0rem 5rem;
+  }
+  main .third .text-content h3 {
+    font-size: 2.9rem;
+    font-family: brand-font;
+    color: #000;
+    padding: 0rem 5rem;
+  }
+  main .third .text-content p {
+    font-size: 1.2rem;
+    font-family: text-font;
+    color: #000;
+    opacity: 0.7;
+    text-align: left;
+    padding: 1rem 5rem;
+  }
+  main .third .text-content .third-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0rem 5rem;
+  }
+  main .third .text-content .third-btn .btn {
+    padding: 0.9rem 0.9rem;
+  }
+  main .third .text-content .third-btn .btn:hover {
+    background-color: #0468d7;
+    color: #f3fcff;
+    transition: all ease-in 0.3s;
   }
 }/*# sourceMappingURL=style.css.map */
