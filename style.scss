@@ -18,6 +18,21 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/*Selection*/
+body {
+  user-select: none;
+}
+/*scrollbar-background*/
+::-webkit-scrollbar {
+  background-color: #f8f6f6;
+  width: 5px;
+}
+/*scrollbar-thumb-background*/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(90, 90, 90, 0.832);
+  border-radius: 20px;
+}
 main {
   width: 100%;
   background-color: #ffffff;
@@ -84,7 +99,8 @@ main {
     padding: 4rem 0.1rem;
     .main-div {
       .line {
-        border-top: 0.3rem solid #e8eaed;
+        border-top: 0.2rem solid #e8eaed;
+        padding: 1rem 3rem;
       }
 
       h2 {
@@ -536,11 +552,14 @@ main {
       text-align: center;
       font-size: 1rem;
       padding: 1rem;
+      cursor: pointer;
     }
     nav {
       padding: 1rem 2rem;
+
       img {
         width: 9%;
+        cursor: pointer;
       }
     }
     /*First section responsive starts here*/
@@ -849,6 +868,7 @@ main {
         display: flex;
         flex-direction: row;
         width: 80%;
+        background-size: 40% 100%;
         .get-text {
           display: flex;
           flex-direction: column;
@@ -866,6 +886,11 @@ main {
             .btn {
               font-size: 1.1rem;
               padding: 0.9rem 2rem;
+            }
+            .btn:hover {
+              color: #fff;
+              background-color: #256cfa;
+              transition: all ease-in 0.3s;
             }
             .read {
               font-size: 1.1rem;
@@ -898,15 +923,15 @@ main {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
-          .about li:hover{
+          .about li:hover {
             cursor: pointer;
             text-decoration: underline;
           }
-          .learn li:hover{
+          .learn li:hover {
             cursor: pointer;
             text-decoration: underline;
           }
-          .platform li:hover{
+          .platform li:hover {
             cursor: pointer;
             text-decoration: underline;
           }
@@ -931,7 +956,6 @@ main {
         gap: 1rem;
         padding: 4rem 1rem;
         .term-para {
-          
           font-size: 0.9rem;
           font-family: text-font;
           color: #000;
@@ -952,7 +976,7 @@ main {
             color: #000;
             opacity: 0.7;
           }
-          a:hover{
+          a:hover {
             text-decoration: underline;
           }
         }

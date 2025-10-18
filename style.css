@@ -19,6 +19,25 @@ body {
   width: 100%;
 }
 
+/*Selection*/
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/*scrollbar-background*/
+::-webkit-scrollbar {
+  background-color: #f8f6f6;
+  width: 5px;
+}
+
+/*scrollbar-thumb-background*/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(90, 90, 90, 0.832);
+  border-radius: 20px;
+}
+
 main {
   width: 100%;
   background-color: #ffffff;
@@ -89,7 +108,8 @@ main .second {
   padding: 4rem 0.1rem;
 }
 main .second .main-div .line {
-  border-top: 0.3rem solid #e8eaed;
+  border-top: 0.2rem solid #e8eaed;
+  padding: 1rem 3rem;
 }
 main .second .main-div h2 {
   padding: 0.5rem 2rem;
@@ -529,12 +549,14 @@ main .footer .terms .privacy a {
     text-align: center;
     font-size: 1rem;
     padding: 1rem;
+    cursor: pointer;
   }
   main nav {
     padding: 1rem 2rem;
   }
   main nav img {
     width: 9%;
+    cursor: pointer;
   }
   main .first {
     display: flex;
@@ -822,6 +844,7 @@ main .footer .terms .privacy a {
     display: flex;
     flex-direction: row;
     width: 80%;
+    background-size: 40% 100%;
   }
   main .started .box .get-text {
     display: flex;
@@ -842,6 +865,11 @@ main .footer .terms .privacy a {
   main .started .box .get-text .text-btn .btn {
     font-size: 1.1rem;
     padding: 0.9rem 2rem;
+  }
+  main .started .box .get-text .text-btn .btn:hover {
+    color: #fff;
+    background-color: #256cfa;
+    transition: all ease-in 0.3s;
   }
   main .started .box .get-text .text-btn .read {
     font-size: 1.1rem;
