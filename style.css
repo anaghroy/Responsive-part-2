@@ -39,7 +39,7 @@ main header p {
   font-size: 0.9rem;
   font-family: brand-font;
   font-weight: 500;
-  padding: 0.5rem;
+  padding: 0.9rem 0.9rem;
 }
 main nav {
   width: 100%;
@@ -343,21 +343,22 @@ main .sixth .main-six .text-content a:hover {
 main .started {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 4.5rem 2rem;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
 }
 main .started .box {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
   border-radius: 2rem;
   background-color: #042449;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-image: url(./images/nine.png);
+  background-position: top right;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: bottom;
 }
 main .started .box .get-text {
   width: -moz-fit-content;
@@ -385,7 +386,7 @@ main .started .box .get-text .text-btn {
   gap: 1rem;
 }
 main .started .box .get-text .text-btn .btn {
-  border: 0.1rem solid #000;
+  border: 0.1em solid #000;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
   text-decoration: none;
@@ -398,7 +399,7 @@ main .started .box .get-text .text-btn .btn {
   width: fit-content;
 }
 main .started .box .get-text .text-btn .read {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: brand-font;
   padding: 1rem 1rem;
   text-decoration: none;
@@ -704,5 +705,38 @@ main .started .box .get-text .text-btn .read {
     background-color: transparent;
     color: #0468d7;
     transition: all ease-in 0.3s;
+  }
+  main .started {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0rem;
+  }
+  main .started .box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  main .started .box .get-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  main .started .box .get-text h1 {
+    font-size: 3.5rem;
+  }
+  main .started .box .get-text p {
+    font-size: 1.4rem;
+  }
+  main .started .box .get-text .text-btn {
+    display: flex;
+    flex-direction: row;
+  }
+  main .started .box .get-text .text-btn .btn {
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+  }
+  main .started .box .get-text .text-btn .read {
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */
