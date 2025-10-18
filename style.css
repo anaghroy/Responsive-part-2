@@ -30,6 +30,7 @@ main {
   /*Five section starts here*/
   /*Four section starts here*/
   /*Get started section starts here*/
+  /*Footer section starts here*/
 }
 main header p {
   /*Header paragraph*/
@@ -406,6 +407,111 @@ main .started .box .get-text .text-btn .read {
   color: #fff;
   font-weight: 500;
 }
+main .footer {
+  background-color: #f8f9fa;
+  width: 100%;
+  padding: 2rem;
+}
+main .footer .main-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 4rem;
+  padding: 2rem;
+}
+main .footer .main-footer figure {
+  width: 80%;
+}
+main .footer .main-footer figure img {
+  width: 100%;
+}
+main .footer .main-footer .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+main .footer .main-footer .links .about ul li {
+  font-family: brand-font;
+  list-style: none;
+  color: #000;
+  opacity: 0.7;
+  line-height: 2rem;
+}
+main .footer .main-footer .links .about ul li:nth-child(1) {
+  color: #000;
+  opacity: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+main .footer .main-footer .links .learn ul li {
+  font-family: brand-font;
+  list-style: none;
+  color: #000;
+  opacity: 0.7;
+  line-height: 2rem;
+}
+main .footer .main-footer .links .learn ul li:nth-child(1) {
+  color: #000;
+  opacity: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+main .footer .main-footer .links .platform ul li {
+  font-family: brand-font;
+  list-style: none;
+  color: #000;
+  opacity: 0.7;
+  line-height: 2rem;
+}
+main .footer .main-footer .links .platform ul li:nth-child(1) {
+  color: #000;
+  opacity: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+main .footer .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  border-bottom: 0.1em solid rgb(227, 224, 224);
+}
+main .footer .icons i {
+  font-size: 1.3rem;
+  color: #000;
+  opacity: 0.7;
+}
+main .footer .terms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+main .footer .terms .term-para {
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: text-font;
+  color: #000;
+  opacity: 0.7;
+}
+main .footer .terms .privacy {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+main .footer .terms .privacy a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: brand-font;
+  color: #000;
+  opacity: 0.7;
+}
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
@@ -417,6 +523,7 @@ main .started .box .get-text .text-btn .read {
     /*Fiveth section responsive starts here*/
     /*Sixth section responsive starts here*/
     /*Get started section responsive starts here*/
+    /*Footer section responsive starts here*/
   }
   main header p {
     text-align: center;
@@ -738,5 +845,83 @@ main .started .box .get-text .text-btn .read {
   }
   main .started .box .get-text .text-btn .read {
     font-size: 1.1rem;
+  }
+  main .footer {
+    width: 100%;
+    padding: 2rem;
+    /*Footer Icons*/
+  }
+  main .footer .main-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  main .footer .main-footer figure {
+    width: 10%;
+  }
+  main .footer .main-footer figure img {
+    width: 100%;
+    cursor: pointer;
+  }
+  main .footer .main-footer .links {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .footer .main-footer .links .about li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  main .footer .main-footer .links .learn li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  main .footer .main-footer .links .platform li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  main .footer .icons {
+    justify-content: start;
+    gap: 1.2rem;
+    padding: 2rem;
+  }
+  main .footer .icons i {
+    color: #000;
+    opacity: 0.7;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  main .footer .terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 4rem 1rem;
+  }
+  main .footer .terms .term-para {
+    font-size: 0.9rem;
+    font-family: text-font;
+    color: #000;
+    opacity: 0.7;
+  }
+  main .footer .terms .privacy {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: end;
+    justify-content: end;
+  }
+  main .footer .terms .privacy a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: brand-font;
+    color: #000;
+    opacity: 0.7;
+  }
+  main .footer .terms .privacy a:hover {
+    text-decoration: underline;
   }
 }/*# sourceMappingURL=style.css.map */

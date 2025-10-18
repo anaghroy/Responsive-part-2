@@ -407,6 +407,126 @@ main {
       }
     }
   }
+  /*Footer section starts here*/
+  .footer {
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 2rem;
+    .main-footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 4rem;
+      padding: 2rem;
+      figure {
+        width: 80%;
+        // background-color: red;
+        img {
+          width: 100%;
+        }
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        gap: 1.5rem;
+        .about {
+          ul {
+            li {
+              font-family: brand-font;
+              list-style: none;
+              color: #000;
+              opacity: 0.7;
+              line-height: 2rem;
+              &:nth-child(1) {
+                color: #000; // applies only to the first <li>
+                opacity: 1;
+                font-size: 1.1rem;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        .learn {
+          ul {
+            li {
+              font-family: brand-font;
+              list-style: none;
+              color: #000;
+              opacity: 0.7;
+              line-height: 2rem;
+              &:nth-child(1) {
+                color: #000; // applies only to the first <li>
+                opacity: 1;
+                font-size: 1.1rem;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        .platform {
+          ul {
+            li {
+              font-family: brand-font;
+              list-style: none;
+              color: #000;
+              opacity: 0.7;
+              line-height: 2rem;
+              &:nth-child(1) {
+                color: #000; // applies only to the first <li>
+                opacity: 1;
+                font-size: 1.1rem;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+    .icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      gap: 1rem;
+      border-bottom: 0.1em solid rgb(227, 224, 224);
+      i {
+        font-size: 1.3rem;
+        color: #000;
+        opacity: 0.7;
+      }
+    }
+    .terms {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      padding: 2rem 1rem;
+      .term-para {
+        font-size: 0.9rem;
+        text-align: center;
+        font-family: text-font;
+        color: #000;
+        opacity: 0.7;
+      }
+      .privacy {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        a {
+          font-size: 0.9rem;
+          text-decoration: none;
+          font-family: brand-font;
+          color: #000;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
 }
 
 /********** Responsive Section **********/
@@ -750,6 +870,90 @@ main {
             .read {
               font-size: 1.1rem;
             }
+          }
+        }
+      }
+    }
+    /*Footer section responsive starts here*/
+    .footer {
+      width: 100%;
+      padding: 2rem;
+      .main-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        figure {
+          width: 10%;
+          // background-color: red;
+          img {
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+        .links {
+          width: 75%;
+          // background-color: red;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          .about li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          .learn li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          .platform li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+      /*Footer Icons*/
+      .icons {
+        justify-content: start;
+        gap: 1.2rem;
+        padding: 2rem;
+        i {
+          color: #000;
+          opacity: 0.7;
+          font-size: 1.3rem;
+          cursor: pointer;
+        }
+      }
+      .terms {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 4rem 1rem;
+        .term-para {
+          
+          font-size: 0.9rem;
+          font-family: text-font;
+          color: #000;
+          opacity: 0.7;
+          // background-color: #0468d7;
+        }
+        .privacy {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          align-items: end;
+          justify-content: end;
+          // background-color: red;
+          a {
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-family: brand-font;
+            color: #000;
+            opacity: 0.7;
+          }
+          a:hover{
+            text-decoration: underline;
           }
         }
       }
